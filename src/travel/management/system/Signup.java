@@ -72,6 +72,34 @@ public class Signup extends JFrame {
         b2.setForeground(Color.WHITE);
 	pl.add(b2);
         
+        JTextField textField = new JTextField();
+	textField.setBounds(265, 91, 148, 20);
+	pl.add(textField);
+	textField.setColumns(10);
+
+	JTextField textField_1 = new JTextField();
+	textField_1.setColumns(10);
+	textField_1.setBounds(265, 128, 148, 20);
+	pl.add(textField_1);
+
+        JTextField textField_2 = new JTextField();
+	textField_2.setColumns(10);
+	textField_2.setBounds(265, 165, 148, 20);
+	pl.add(textField_2);
+
+	JTextField textField_3 = new JTextField();
+	textField_3.setColumns(10);
+	textField_3.setBounds(265, 239, 148, 20);
+	pl.add(textField_3);
+        
+        ImageIcon c1 = new ImageIcon(ClassLoader.getSystemResource("icons/signup.png"));
+        Image i1 = c1.getImage().getScaledInstance(300, 200,Image.SCALE_DEFAULT);
+        ImageIcon i2 = new ImageIcon(i1);
+
+        JLabel l6 = new JLabel(i2);
+        l6.setBounds(460, 70, 200, 200);
+        add(l6);
+        
         setVisible(true); 
         
     }; 
