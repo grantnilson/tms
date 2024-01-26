@@ -45,11 +45,17 @@ public class Signup extends JFrame {
 	pl.add(lblAnswer);
         
         
-        Choice security = new Choice(); 
-        security.add("First Cat?");
-        security.add("GF Name?"); 
-        security.add("Your Lucky Number?");
-        security.add("Home Address?");
+        JComboBox comboBox = new JComboBox();
+	comboBox.setModel(new DefaultComboBoxModel(new String[] { "Your NickName?", "Your Lucky Number?",
+			"Your child SuperHero?", "Your childhood Name ?" }));
+	comboBox.setBounds(265, 202, 148, 20);
+	pl.add(comboBox);
+
+	JLabel lblSecurityQuestion = new JLabel("Security Question :");
+	lblSecurityQuestion.setForeground(Color.DARK_GRAY);
+	lblSecurityQuestion.setFont(new Font("Tahoma", Font.BOLD, 14));
+	lblSecurityQuestion.setBounds(99, 197, 140, 26);
+	pl.add(lblSecurityQuestion);
         
         
         JLabel lblSecurityQuestion = new JLabel("Security Question :");
